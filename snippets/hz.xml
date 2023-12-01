@@ -18,6 +18,10 @@
            fetch="https://gitlab.com/HZOS-Project"
            revision="14" />
 	
+  <remote  name="hz-bitbucket"
+           fetch="https://bitbucket.org/hzos-project"
+           revision="14" />
+
   <!-- GitHub -->
   <remote  name="hz-devices"
            fetch="https://github.com/HZOS-Devices/"
@@ -115,7 +119,7 @@
   <project path="vendor/hz" name="android_vendor_hz" remote="hz-github" />
   <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="hz-github" />
   <project path="vendor/support" name="android_vendor_support" remote="hz-github" />
-  <project path="vendor/gms" name="vendor_gms" remote="pixel-gitlab" clone-depth="1" />
+  <project path="vendor/gms" name="android_vendor_gms" remote="hz-bitbucket" clone-depth="1" />
   <project path="vendor/OTA" name="OTA" remote="hz-github" />
 
   <!-- Prebuilts -->
